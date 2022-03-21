@@ -1,0 +1,41 @@
+.header{
+    background-color: cyan;
+    height: 60px;
+    width: 990px;
+    position: relative;
+    bottom: 20px;
+    left: 340px;
+}
+
+ul {
+    list-style: none;
+}
+
+li{
+    position: relative;
+    top: 12px;
+    left: 170px;
+}
+
+.header ul li a{
+    text-decoration: none;
+    float: left;
+    height: 30px;
+    padding: 0px 70px;
+    font-size: 16px;
+}
+
+.header ul li a:hover {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    animation-name: link;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes link{
+    100%{
+        background: orange;
+    }
+}
