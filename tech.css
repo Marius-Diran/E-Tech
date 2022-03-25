@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@1,500&display=swap');
 
 *{
     padding: 0;
@@ -6,21 +6,25 @@
     box-sizing: border-box;
 }
 
+body{
+    background-image: url('pexels-ready-made-3847497.jpg');
+    background-size: cover;
+}
 
 .header{
-    height: 100px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
 .header h2 {
-    color: hsl(180, 45%, 50%);
-    font-family: 'Lobster', cursive;
+    color: cyan;
+    font-family: 'Roboto', sans-serif;
     font-size: 40px;
     font-weight: bold;
     position: absolute;
-    top: 3vh;
+    top: 2vh;
     left: 50px;
 }
 
@@ -35,7 +39,7 @@ ul li a{
     text-decoration: none;
     padding: 0 20px;
     display: inline-block;
-    color: green;
+    color: white;
 }
 
 li a::after{
@@ -43,7 +47,7 @@ li a::after{
     display: block;
     height: 5px;
     width: 0;
-    background: #c4c4f7;
+    background: cyan;
     transition: all .5s;
 }
 
@@ -59,88 +63,76 @@ main{
     justify-content: center;
 }
 
-.content-left h2{
+.content-center img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 75vh;
     position: absolute;
-    top: 23vh;
-    left: 11vw;
-    font-size: 33px;
+    top: 10.6vh;
+    left: 0;
+    z-index: -1;
 }
 
-.content-left h3{
-    color: hsl(180, 45%, 50%);
-    font-family: 'Lobster', cursive;
-    position: absolute;
-    top: 27vh;
-    left: 8.5vw;
-    font-size: 38px;
-}
-
-.content-left p{
+.content-center h2{
+    color: white;
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
     border: 1px;
-    height:17vh;
-    width:30vw;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 25px;
+    width: 67.5vh;
     position: absolute;
-    left: 3vw;
-    top: 35vh;
+    right: 9.5vw;
+    top: 34vh;
+}
+
+.content-center h3{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border: 1px;
+    width: 67.5vh;
+    position: absolute;
+    right: 9vw;
+    top: 44vh;
+    line-height: 5vh;
 }
 
 .signin-btn{
-    border: 1px;
-    border-radius: 20px;
-    background: hsl(240, 100%, 80%);
-    text-decoration: none;
-    color: white;
-    padding: 10px 20px;
+    background: hsl(0, 0%, 45%);
+    color: hsl(180, 100%, 80%);
+    display: flex;
     position: absolute;
-    left: 3vw;
-    top: 52vh;
-    transition: font-size 0.5s ease;
+    top: 61.5vh;
+    right: 30vw;
+    text-decoration: none;
+    font-size: 17px;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 5px 11px;
+    transition: 1s ease;
 }
 
 .signin-btn:hover{
     font-size: 20px;
-    animation-name: signin-btn;
-    animation-duration: 500ms;
-    animation-fill-mode: forwards;
 }
-
-@keyframes signin-btn{
-    100%{
-        background-color: orange;
-    }
-}
-
 
 .learnmore-btn{
-    border: 1px;
-    border-radius: 20px;
-    background: hsl(240, 100%, 80%);
-    text-decoration: none;
-    color: white;
-    padding: 10px 20px;
+    background: hsl(0, 0%, 45%);
+    color: hsl(180, 100%, 80%);
+    display: flex;
     position: absolute;
-    left: 12vw;
-    top: 52vh;
-    transition: font-size 0.5s ease;
+    top: 61.5vh;
+    right: 20vw;
+    text-decoration: none;
+    font-size: 17px;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 5px 11px;
+    transition: 1s ease;
 }
 
 .learnmore-btn:hover{
     font-size: 20px;
-    animation-name: learnmore-btn;
-    animation-duration: 500ms;
-    animation-fill-mode: forwards;
-}
-
-@keyframes learnmore-btn{
-    100%{
-        background-color: orange;
-    }
-}
-
-.content-right{
-    position: absolute;
-    right: 2vw;
 }
