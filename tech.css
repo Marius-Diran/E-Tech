@@ -144,11 +144,11 @@ main{
 
 .services h2{
     font-family: 'Roboto', sans-serif;
-    font-size: 25px;
+    font-size: 30px;
     color: darkblue;
     position: absolute;
-    top: 600px;
-    left: 10vw;
+    top: 90vh;
+    left: 45vw;
 }
 
 .onlineclass{
@@ -159,7 +159,7 @@ main{
     border-radius: 20px;
     padding: 30px 60px;
     position: absolute;
-    top: 670px;
+    top: 100vh;
     left: 4vw;
 }
 
@@ -168,7 +168,12 @@ main{
     font-weight: bold;
     color: darkblue;
     position: relative;
-    top: 50px;
+    top: 8vh;
     left: 30px;
 }
 
+.onlineclass img{
+    position: relative;
+    top: -5vh;
+    left: -6vw;
+}
