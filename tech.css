@@ -8,8 +8,13 @@
 
 body{
     background-image: url('pexels-ready-made-3847497.jpg');
+    width: cover;
+    height: 200vh;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+
 
 .header{
     height: 70px;
@@ -23,9 +28,9 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
     font-weight: bold;
-    position: absolute;
-    top: 2vh;
-    left: 50px;
+     position: absolute; 
+     top: 2vh; 
+     left: 50px;
 }
 
 ul{
@@ -39,7 +44,7 @@ ul li a{
     text-decoration: none;
     padding: 0 20px;
     display: inline-block;
-    color: white;
+    color: darkblue;
 }
 
 li a::after{
@@ -67,7 +72,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw;
+    width: 98.7vw;
     height: 75vh;
     position: absolute;
     top: 10.6vh;
@@ -136,3 +141,34 @@ main{
 .learnmore-btn:hover{
     font-size: 20px;
 }
+
+.services h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: darkblue;
+    position: absolute;
+    top: 600px;
+    left: 10vw;
+}
+
+.onlineclass{
+    border: 3px solid blue;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    padding: 30px 60px;
+    position: absolute;
+    top: 670px;
+    left: 4vw;
+}
+
+.onlineclass p{
+    font-size: 30px;
+    font-weight: bold;
+    color: darkblue;
+    position: relative;
+    top: 50px;
+    left: 30px;
+}
+
