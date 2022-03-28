@@ -323,6 +323,13 @@ main{
 }
 
 .about p{
-    font-size: 15px;
-    color: white;
+    border: 1px;
+    width: 57vw;
+    height: 15vh;
+    font-size: 20px;
+    text-align: justify;
+    color: blue;
+    position: relative;
+    top: 140vh;
+    left: -18vw;
 }
