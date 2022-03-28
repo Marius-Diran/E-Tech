@@ -8,7 +8,6 @@
 
 body{
     background-image: url('pexels-ready-made-3847497.jpg');
-    width: cover;
     height: 200vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -153,11 +152,11 @@ main{
 
 .onlineclass{
     border: 3px solid blue;
-    height: 200px;
+    height: 27vh;
+    width: 22vw;
     display: flex;
     align-items: center;
     border-radius: 20px;
-    padding: 30px 60px;
     position: absolute;
     top: 100vh;
     left: 4vw;
@@ -168,12 +167,67 @@ main{
     font-weight: bold;
     color: darkblue;
     position: relative;
-    top: 8vh;
-    left: 30px;
+    top: 8.8vh;
+    left: 4.3vw;
 }
 
 .onlineclass img{
     position: relative;
-    top: -5vh;
-    left: -6vw;
+    top: -6vh;
+    left: -10vw;
+}
+
+.gamedev{
+    border: 3px solid blue;
+    height: 27vh;
+    width: 22vw;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    position: absolute;
+    top: 100vh;
+    left: 37vw;
+}
+
+.gamedev p{
+    font-size: 30px;
+    font-weight: bold;
+    color: darkblue;
+    position: relative;
+    top: 8.8vh;
+    left: 6vw;
+}
+
+.gamedev img{
+    position: relative;
+    top: -6vh;
+    left: -8vw;
+}
+
+
+.debugging{
+    border: 3px solid blue;
+    height: 27vh;
+    width: 22vw;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    position: absolute;
+    top: 100vh;
+    left: 70vw;
+}
+
+.debugging p{
+    font-size: 30px;
+    font-weight: bold;
+    color: darkblue;
+    position: relative;
+    top: 8.8vh;
+    left: 6vw;
+}
+
+.debugging img{
+    position: relative;
+    top: -6vh;
+    left: -8vw;
 }
