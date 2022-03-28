@@ -147,7 +147,7 @@ main{
     color: darkblue;
     position: absolute;
     top: 90vh;
-    left: 45vw;
+    left: 43vw;
 }
 
 .onlineclass{
@@ -230,4 +230,99 @@ main{
     position: relative;
     top: -6vh;
     left: -8vw;
+}
+
+.cybersecurity{
+    border: 3px solid blue;
+    height: 27vh;
+    width: 22vw;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    position: absolute;
+    top: 135vh;
+    left: 4vw;
+}
+
+.cybersecurity p{
+    font-size: 30px;
+    font-weight: bold;
+    color: darkblue;
+    position: relative;
+    top: 8.8vh;
+    left: 4vw;
+}
+
+.cybersecurity img{
+    position: relative;
+    top: -6vh;
+    left: -12vw;
+}
+
+.uiux{
+    border: 3px solid blue;
+    height: 27vh;
+    width: 22vw;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    position: absolute;
+    top: 135vh;
+    left: 37vw;
+}
+
+.uiux p{
+    font-size: 30px;
+    font-weight: bold;
+    color: darkblue;
+    position: relative;
+    top: 8.8vh;
+    left: 4.3vw;
+}
+
+.uiux img{
+    position: relative;
+    top: -6vh;
+    left: -11vw;
+}
+
+.webdev{
+    border: 3px solid blue;
+    height: 27vh;
+    width: 22vw;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    position: absolute;
+    top: 135vh;
+    left: 70vw;
+}
+
+.webdev p{
+    font-size: 30px;
+    font-weight: bold;
+    color: darkblue;
+    position: relative;
+    top: 8.8vh;
+    left: 6.3vw;
+}
+
+.webdev img{
+    position: relative;
+    top: -6vh;
+    left: -7.6vw;
+}
+
+.about h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color: darkblue;
+    position: absolute;
+    top: 170vh;
+    left: 43vw;
+}
+
+.about p{
+    font-size: 15px;
+    color: white;
 }
