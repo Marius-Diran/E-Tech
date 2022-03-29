@@ -313,13 +313,23 @@ main{
     left: -7.6vw;
 }
 
+.about{
+    border: 1px;
+    height: 55vh;
+    width: 98vw;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 173vh;
+}
+
 .about h2{
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
     color: darkblue;
     position: absolute;
-    top: 170vh;
-    left: 43vw;
+    top: 1vh;
+    left: 41vw;
 }
 
 .about p{
@@ -331,15 +341,16 @@ main{
     line-height: 30px;
     color: blue;
     position: relative;
-    top: 175vh;
-    left: -24.1vw;
+    top: 0vh;
+    left: 1.3vw;
 }
 
 .about img{
     position: relative;
-    top: 145vh;
-    left: 38vw;
-}
+    top: 3vh;
+    left: 15vw;
+    z-index: -1;
+} 
 
 .about h3{
     border: 1px;
@@ -349,6 +360,16 @@ main{
     font-family: 'Roboto', sans-serif;
     font-size: 52px;
     position: relative;
-    top: 120vh;
-    left: 49.5vw;
+    top: 2.7vh;
+    right: 6.5vw;
+}
+
+.about-onlineclasses{
+    border: 1px solid red;
+    height: 55vh;
+    width: 98vw;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 230vh;
 }
