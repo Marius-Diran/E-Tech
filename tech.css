@@ -7,8 +7,8 @@
 }
 
 body{
-    background-image: url('pexels-ready-made-3847497.jpg');
-    height: 200vh;
+    background-image: url('Images/pexels-ready-made-3847497.jpg');
+    height: 250vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -324,12 +324,31 @@ main{
 
 .about p{
     border: 1px;
-    width: 57vw;
-    height: 15vh;
+    width: 48.5vw;
+    height: 30vh;
     font-size: 20px;
     text-align: justify;
+    line-height: 30px;
     color: blue;
     position: relative;
-    top: 140vh;
-    left: -18vw;
+    top: 175vh;
+    left: -24.1vw;
+}
+
+.about img{
+    position: relative;
+    top: 145vh;
+    left: 38vw;
+}
+
+.about h3{
+    border: 1px;
+    width: fit-content;
+    height: fit-content;
+    color: darkblue;
+    font-family: 'Roboto', sans-serif;
+    font-size: 52px;
+    position: relative;
+    top: 120vh;
+    left: 49.5vw;
 }
