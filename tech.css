@@ -373,3 +373,17 @@ main{
     position: absolute;
     top: 230vh;
 }
+
+.about-onlineclasses h3{
+    color: darkblue;
+    font-size: 30px;
+    position: relative;
+    top: -22vh;
+    left: 2vw;
+}
+
+.icon1{
+    position: relative;
+    top: -22vh;
+    left: 1vw;
+}
