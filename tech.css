@@ -8,7 +8,7 @@
 
 body{
     background-image: url('Images/pexels-ready-made-3847497.jpg');
-    height: 300vh;
+    height: 500vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -406,6 +406,7 @@ main{
     color: blue;
     font-size: 27px;
     line-height: 32px;
+    text-align: justify;
     position: relative;
     left: -18vw;
     top: 2vh;
@@ -432,5 +433,66 @@ main{
 }
 
 .link1:hover{
+    font-size: 19px;
+}
+
+.details-gamedev{
+    border: 1px;
+    height: 60vh;
+    width: 98vw;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 320vh;
+}
+
+.details-gamedev h3{
+     border: 1px;
+     height: fit-content;
+     width: 39vw;
+     color: darkblue;
+     font-size: 30px;
+     text-align: center;
+     position: relative;
+     top: -18vh;
+     left: 76vw;
+}
+
+.icon2{
+    position: relative;
+    top: -19vh;
+    left: 77vw;
+}
+
+.details-gamedev p{
+    border: 1px;
+    color: blue;
+    font-size: 27px;
+    line-height: 32px;
+    text-align: justify;
+    position: relative;
+    left: 32vw;
+}
+
+.img2{
+    position: relative;
+    right: 64vw;
+}
+
+.link2{
+    background: hsl(0, 0%, 45%);
+    color: hsl(180, 100%, 80%);
+    position: absolute;
+    right: 4vw;
+    top: 41vh;
+    text-decoration: none;
+    font-size: 17px;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 5px 11px;
+    transition: 1s ease;
+}
+
+.link2:hover{
     font-size: 19px;
 }
