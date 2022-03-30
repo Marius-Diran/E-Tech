@@ -8,7 +8,7 @@
 
 body{
     background-image: url('Images/pexels-ready-made-3847497.jpg');
-    height: 250vh;
+    height: 300vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -365,8 +365,8 @@ main{
 }
 
 .about-onlineclasses{
-    border: 1px solid red;
-    height: 55vh;
+    border: 1px;
+    height: 45vh;
     width: 98vw;
     display: flex;
     align-items: center;
@@ -376,14 +376,48 @@ main{
 
 .about-onlineclasses h3{
     color: darkblue;
+    border: 1px;
+    width: 58vw;
+    text-align: center;
     font-size: 30px;
     position: relative;
-    top: -22vh;
+    top: -16vh;
     left: 2vw;
 }
 
 .icon1{
     position: relative;
-    top: -22vh;
-    left: 1vw;
+    top: -15vh;
+    left: 2.7vw;
+}
+
+.about-onlineclasses p{
+    border: 1px;
+    color: blue;
+    font-size: 27px;
+    line-height: 28px;
+    position: relative;
+    left: -16vw;
+    top: 2vh;
+}
+
+.img1{
+    position: relative;
+    top: 0vh;
+    right: -4vw;
+}
+
+.about-onlineclasses a{
+    border: 1px solid white;
+    background: hsl(0, 0%, 45%);
+    color: hsl(180, 100%, 80%);
+    border-radius: 20px;
+    width: 36vw;
+    height: 4.1vh;
+    text-align: center;
+    text-decoration: none;
+    font-size: 19px;
+    position: relative;
+    top: 18vh;
+    left: -86.5vw;
 }
