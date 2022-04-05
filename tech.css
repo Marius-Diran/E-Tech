@@ -45,16 +45,16 @@ body{
     color: darkblue;
 }
 
-.header li a::after{
+.header ul li a::after{
     content: '';
     display: block;
     height: 5px;
     width: 0;
     background: cyan;
-    transition: all .5s;
+    transition: all 0.5s;
 }
 
-.header li a:hover::after{
+.header ul li a:hover::after{
     width: 100%;
 }
 
@@ -71,7 +71,7 @@ body{
 
 .content-center img{
     position: absolute;
-    width: 98.7vw;
+    width: 100%;
     height: 75vh;
     z-index: -1;
 }
@@ -85,7 +85,7 @@ body{
     font-size: 35px;
     font-family: 'Roboto', sans-serif;
     position: absolute;
-    top: 35vh;
+    top: 28vh;
     right: 7vw;
 }
 
@@ -97,15 +97,14 @@ body{
     text-align: justify;
     font-size: 25px;
     position: absolute;
-    top: 44vh;
+    top: 38vh;
     right: 1vw;
     line-height: 30px;
 }
 
 .signin-btn{
-    display: flex;
     position: absolute;
-    top: 62vh;
+    top: 55vh;
     right: 29vw;
     color: hsl(180, 100%, 80%);
     background: hsl(0, 0%, 45%);
@@ -122,9 +121,8 @@ body{
 }
 
 .learnmore-btn{
-    display: flex;
     position: absolute;
-    top: 62vh;
+    top: 55vh;
     right: 19vw;
     color: hsl(180, 100%, 80%);
     background: hsl(0, 0%, 45%);
@@ -140,7 +138,7 @@ body{
     font-size: 20px;
 }
 
-.services{
+#services{
     border: 1px;
     height: 100vh;
     width: 100%;
@@ -148,21 +146,23 @@ body{
     top: 5vh;
 }
 
-.services h2{
+#services h2{
     border: 1px;
     height: fit-content;
-    width: 13vw;
+    width: 14vw;
     color: darkblue;
     font-size: 30px;
+    text-align: center;
     font-family: 'Roboto', sans-serif;
     position: absolute;
     left: 40vw;
+    top: 1vh;
 }
 
 .onlineclass{
     border: 3px solid blue;
     border-radius: 20px;
-    box-shadow: 0 9px 10px rgba(0,0,0,0.65);
+    box-shadow: 0 9px 10px rgba(0,0,0,0.5);
     height: 27vh;
     width: 22vw;
     position: relative;
@@ -188,7 +188,7 @@ body{
 .gamedev{
     border: 3px solid blue;
     border-radius: 20px;
-    box-shadow: 0 9px 10px rgba(0,0,0,0.65);
+    box-shadow: 0 9px 10px rgba(0,0,0,0.5);
     height: 27vh;
     width: 22vw;
     position: relative;
@@ -214,7 +214,7 @@ body{
 .debugging{
     border: 3px solid blue;
     border-radius: 20px;
-    box-shadow: 0 9px 10px rgba(0,0,0,0.65);
+    box-shadow: 0 9px 10px rgba(0,0,0,0.5);
     height: 27vh;
     width: 22vw;
     position: relative;
@@ -240,7 +240,7 @@ body{
 .cybersecurity{
     border: 3px solid blue;
     border-radius: 20px;
-    box-shadow: 0 9px 10px rgba(0,0,0,0.65);
+    box-shadow: 0 9px 10px rgba(0,0,0,0.5);
     height: 27vh;
     width: 22vw;
     position: relative;
@@ -266,7 +266,7 @@ body{
 .uiux{
     border: 3px solid blue;
     border-radius: 20px;
-    box-shadow: 0 9px 10px rgba(0,0,0,0.65);
+    box-shadow: 0 9px 10px rgba(0,0,0,0.5);
     height: 27vh;
     width: 22vw;
     position: relative;
@@ -292,7 +292,7 @@ body{
 .webdev{
     border: 3px solid blue;
     border-radius: 20px;
-    box-shadow: 0 9px 10px rgba(0,0,0,0.65);
+    box-shadow: 0 9px 10px rgba(0,0,0,0.5);
     height: 27vh;
     width: 22vw;
     position: relative;
@@ -315,7 +315,7 @@ body{
     left: 2vh;
 }
 
-.about{
+#about{
     border: 1px;
     height: 80vh;
     width: 100%;
@@ -326,7 +326,7 @@ body{
     top: 8vh;
 }
 
-.about h2{
+#about h2{
     border: 1px;
     font-size: 40px;
     color: darkblue;
@@ -337,7 +337,7 @@ body{
     left: 40vw;
 }
 
-.about p{
+#about p{
     border: 1px;
     height: fit-content;
     width: 60vw;
@@ -349,13 +349,13 @@ body{
     line-height: 27px;
 }
 
-.about img{
+#about img{
     position: absolute;
     right: 0vw;
     top: 13vh;
 }
 
-.about h3{
+#about h3{
     position: absolute;
     right: 11.5vw;
     top: 30vh;
@@ -365,15 +365,15 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-.details{
+#details{
     border: 1px;
-    height: 200vh;
+    height: 430vh;
     width: 100%;
     position: relative;
     top: 5vh;
 }
 
-.details h2{
+#details h2{
     color: darkblue;
     font-size: 30px;
     font-family: 'Roboto', sans-serif;
@@ -424,7 +424,6 @@ body{
 }
 
 .link1{
-    display: flex;
     color:hsl(180, 100%, 80%);
     background: hsl(0, 0%, 45%);
     border: 1px solid white;
@@ -454,14 +453,14 @@ body{
     font-size: 27px;
     color: darkblue;
     position: absolute;
-    top: 3vh;
-    left: 2vw;
+    top: 15vh;
+    right: 2vw;
 }
 
 .icon2{
     position: absolute;
-    top: 2vh;
-    left: 11vw;
+    top: 11vh;
+    right: 11vw;
 }
 
 .details-gamedev p{
@@ -484,19 +483,375 @@ body{
 }
 
 .link2{
-    display: flex;
     color:hsl(180, 100%, 80%);
     background:hsl(0, 0%, 45%);
     border: 1px solid white;
     border-radius: 20px;
     padding: 5px 11px;
     text-decoration: none;
+    font-size: 17px;
     position: absolute;
     top: 49vh;
-    right: 5vw;
+    right: 2vw;
     transition: 1s ease;
 }
 
 .link2:hover{
     font-size: 20px;
+}
+
+.details-debugging{
+    border: 1px;
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    top: 20vh;
+}
+
+.details-debugging h3{
+    font-size: 27px;
+    color: darkblue;
+    position: absolute;
+    top: 9vh;
+    left: 2vw;
+}
+
+.icon3{
+    position: absolute;
+    top: 6vh;
+    left: 12vw;
+}
+
+.details-debugging p{
+    border: 1px;
+    height: fit-content;
+    width: 55vw;
+    color: blue;
+    font-size: 25px;
+    text-align: justify;
+    line-height: 30px;
+    position: absolute;
+    top: 20vh;
+    left: 2vw;
+}
+
+.img3{
+    position: absolute;
+    top: 8vh;
+    right: 2vw;
+}
+
+.link3{
+    border: 1px solid white;
+    border-radius: 20px;
+    background:hsl(0, 0%, 45%);
+    color:hsl(180, 100%, 80%);
+    font-size: 17px;
+    text-decoration: none;
+    padding: 5px 11px;
+    position: absolute;
+    top: 42vh;
+    left: 2vw;
+    transition: 1s ease;
+}
+
+.link3:hover{
+    font-size: 20px;
+}
+
+.details-cybersecurity{
+    border: 1px;
+    height: 90vh;
+    width: 100%;
+    position: relative;
+    top: 20vh;
+}
+
+.details-cybersecurity h3{
+    font-size: 27px;
+    color: darkblue;
+    position: absolute;
+    top: 14vh;
+    right: 13vw;
+}
+
+.icon4{
+    position: absolute;
+    top: 10vh;
+    right: 7vw;
+}
+
+.details-cybersecurity p{
+    border: 1px;
+    height: fit-content;
+    width: 55vw;
+    font-size: 25px;
+    text-align: justify;
+    line-height: 30px;
+    color: blue;
+    position: absolute;
+    top: 25vh;
+    right: 2vw;
+}
+
+.img4{
+    position: absolute;
+    top: 15vh;
+    left: 2vw;
+}
+
+.link4{
+    color:hsl(180, 100%, 80%);
+    background:hsl(0, 0%, 45%);
+    border: 1px solid white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 5px 11px;
+    position: absolute;
+    top: 47vh;
+    right: 2vw;
+    transition: 1s ease;
+}
+
+.link4:hover{
+    font-size: 20px;
+}
+
+.details-uiux{
+    border: 1px;
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    top: 10vh;
+}
+
+.details-uiux h3{
+    font-size: 27px;
+    color: darkblue;
+    position: absolute;
+    top: 15vh;
+    left: 5vw;
+}
+
+.icon5{
+    position: absolute;
+    top: 12vh;
+    left: 18vw
+}
+
+.details-uiux p{
+    border: 1px;
+    height: fit-content;
+    width: 55vw;
+    font-size: 25px;
+    color: blue;
+    text-align: justify;
+    line-height: 30px;
+    position: absolute;
+    top: 25vh;
+    left: 2vw;
+}
+
+.img5{
+    position: absolute;
+    top: 10vh;
+    right: 2vw;
+}
+
+.link5{
+    color:hsl(180, 100%, 80%);
+    background:hsl(0, 0%, 45%);
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 17px;
+    text-decoration: none;
+    padding: 5px 11px;
+    transition: 1s ease;
+    position: absolute;
+    top: 48vh;
+    left: 2vw;
+}
+
+.link5:hover{
+    font-size: 20px;
+}
+
+.details-webdev{
+    border: 1px;
+    height: 70vh;
+    width: 100%;
+    position: relative;
+    top: 19vh;
+}
+
+.details-webdev h3{
+    font-size: 27px;
+    color: blue;
+    position: absolute;
+    top: 11vh;
+    right: 13vw;
+}
+
+.icon6{
+    position: absolute;
+    top: 8vh;
+    right: 7vw;
+}
+
+.details-webdev p{
+    border: 1px;
+    width: 55vw;
+    height: fit-content;
+    font-size: 25px;
+    color: blue;
+    line-height: 30px;
+    text-align: justify;
+    position: absolute;
+    top: 20vh;
+    right: 2vw;
+}
+
+.img6{
+    position: absolute;
+    top: 12vh;
+    left: 2vw;
+}
+
+.link6{
+    color:hsl(180, 100%, 80%);
+    background:hsl(0, 0%, 45%);
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 17px;
+    text-decoration: none;
+    padding: 5px 11px;
+    position: absolute;
+    top: 36vh;
+    right: 2vw;
+    transition: 1s ease;
+}
+
+.link6:hover{
+    font-size: 20px;
+}
+
+#contact{
+    border: 1px;
+    height: 90vh;
+    width: 100%;
+}
+
+.I1{
+    border: 1px;
+    height: 70vh;
+    width: 40vw;
+    position: relative;
+    top: 10vh;
+    left: 2vw;
+}
+
+.I1 h2{
+    color: darkblue;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    left: 10vw;
+    top: 1vh;
+}
+
+.myinfo{
+    border: 3px solid darkblue;
+    border-radius: 20px;
+    height: 50vh;
+    width: 30vw;
+    position: absolute;
+    top: 10vh;
+    left: 3vw;
+    box-shadow: 0px 9px 10px rgba(0, 0, 0, 0.5);
+}
+
+.myinfo h3{
+    color: darkblue;
+    font-size: 25px;
+    padding: 7px 16px;
+}
+
+.myinfo p{
+    color: blue;
+    font-size: 20px;
+    padding: 5px 16px;
+}
+
+.message{
+    border: 1px;
+    height: 70vh;
+    width: 46vw;
+    position: absolute;
+    top: -1vh;
+    left: 50vw;
+}
+
+.message h2{
+    color: darkblue;
+    font-size: 30px;
+    position: absolute;
+    top: -2vh;
+}
+
+.form{
+    border: 3px solid darkblue;
+    border-radius: 20px;
+    height: 59vh;
+    width: 40vw;
+    position: absolute;
+    top: 8vh;
+    right: 3vw;
+    box-shadow: 0 9px 10px rgba(0, 0, 0, 0.5);
+}
+
+#na1{
+    font-size: 20px;
+    color: blue;
+    position: absolute;
+    left: 1vw;
+    top: 2vh;
+}
+
+#em1{
+    font-size: 20px;
+    color: blue;
+    position: absolute;
+    left: 1vw;
+    top: 10vh;
+}
+
+#text{
+    position: absolute;
+    top: 20vh;
+    left: 2vw;
+    width: 34vw;
+    height: 25vh;
+}
+
+#send-btn{
+    color:hsl(180, 100%, 80%);
+    background:hsl(0, 0%, 45%);
+    border: 1px solid white;
+    text-align: center;
+    width: 37.8vw;
+    height: 4vh;
+    position: absolute;
+    top: 50vh;
+    left: 1vw;
+}
+ 
+#footer{
+    border: 1px solid white;
+    background: blue;
+    color: white;
+    height: 5vh;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
 }
