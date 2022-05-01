@@ -12,7 +12,7 @@ body{
     background-attachment: fixed;
 }
 
-.header{
+#header{
     border: 1px;
     height: 15vh;
     width: 100%;
@@ -21,7 +21,7 @@ body{
     justify-content: space-around;
 }
 
-.header h2{
+#header h2{
     color: cyan;
     font-size: 30px;
     font-family: 'Roboto', sans-serif;
@@ -30,7 +30,7 @@ body{
     top: 5vh;
 }
 
-.header ul{
+#header ul{
     list-style: none;
     display: flex;
     position: absolute;
@@ -38,14 +38,14 @@ body{
     top: 6.4vh;
 }
 
-.header ul li a{
+#header ul li a{
     text-decoration: none;
     padding: 0 20px;
     display: inline-block;
     color: darkblue;
 }
 
-.header ul li a::after{
+#header ul li a::after{
     content: '';
     display: block;
     height: 5px;
@@ -54,11 +54,20 @@ body{
     transition: all 0.5s;
 }
 
-.header ul li a:hover::after{
+#header ul li a:hover::after{
     width: 100%;
 }
 
-.content-center{
+#header .hambuger-menu{
+    display: none;
+    position: relative;
+    width: 20vw;
+    height: 10vh;
+    top: 1vh;
+    left: 35vw; 
+}
+
+#content-center{
     border: 1px;
     width: 100%;
     height: 75vh;
@@ -69,14 +78,14 @@ body{
     top: 2vh;
 }
 
-.content-center img{
-    position: absolute;
+#content-center img{
     width: 100%;
     height: 75vh;
     z-index: -1;
 }
 
-.content-center h2{
+
+#content-center h2{
     border: 1px;
     height: fit-content;
     width: 30vw;
@@ -89,7 +98,7 @@ body{
     right: 7vw;
 }
 
-.content-center h3{
+#content-center h3{
     border: 1px;
     color: white;
     width: 42vw;
@@ -791,7 +800,10 @@ body{
     top: -1vh;
     left: 50vw;
 }
-
+#text{
+    padding-left: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
 .message h2{
     color: darkblue;
     font-size: 30px;
@@ -854,4 +866,54 @@ body{
     width: 100%;
     text-align: center;
     font-size: 25px;
+}
+
+@media (min-width: 319px) and (max-width: 767px){
+    #header h2{
+        font-size: 1.3rem;
+        top: 6.5vh;
+    }
+
+    #header .hambuger-menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 20vw;
+        height: 10vh;
+    }
+
+    #header .hambuger-menu-btn{
+        width: 12vw;
+        height: 1vh;
+        border-radius: 2vh;
+        background-color: white;
+        transition: all .5s ease-in-out;
+    }
+
+    #header .hambuger-menu-btn::before,
+    .hambuger-menu-btn::after{
+        content: '';
+        position: absolute;
+        width: 12vw;
+        height: 1vh;
+        border-radius: 2vh;
+        background-color: white;
+        transition: all .5s ease-in-out;
+    }
+
+    .hambuger-menu-btn::before{
+        transform: translateY(-2vh);
+    }
+
+    .hambuger-menu-btn::after{
+        transform: translatey(2vh);
+    }
+
+    #header ul{
+        display: none;
+    }
+
+    #content-center img{
+        width: 100%;
+    }
 }
