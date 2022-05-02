@@ -868,7 +868,7 @@ body{
     font-size: 25px;
 }
 
-@media (min-width: 319px) and (max-width: 767px){
+@media (min-width: 320px) and (max-width: 480px){
     #header h2{
         font-size: 1.3rem;
         top: 6.5vh;
