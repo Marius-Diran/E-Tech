@@ -940,4 +940,10 @@ body{
         top: 33vh;
         right: 33vw;
     }
+
+    #content-center .learnmore-btn{
+        font-size: .8rem;
+        top: 33vh;
+        right: 3vw;
+    }
 }
