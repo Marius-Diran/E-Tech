@@ -1,949 +1,852 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@1,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@1,500&display=swap");
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-image: url('Images/pexels-ready-made-3847497.jpg');
-    background-size: cover;
-    background-attachment: fixed;
+body {
+  background-image: url("Images/pexels-ready-made-3847497.jpg");
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-#header{
-    border: 1px;
-    height: 15vh;
-    width: 100%;
+#header {
+  display: flex;
+  height: 4rem;
+  line-height: 4rem;
+  justify-content: space-between;
+}
+
+#header h2 {
+  margin: 0 2rem;
+  color: cyan;
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+}
+
+#header ul {
+  list-style: none;
+  display: flex;
+  position: absolute;
+  right: 3vw;
+}
+
+#header ul li a {
+  text-decoration: none;
+  padding: 0 20px;
+  color: darkblue;
+}
+
+.hambuger-menu {
+  display: none;
+}
+
+#content-center {
+  background: url("./Images/SL-051919-20420-21.jpg");
+  background-size: 100% 100%;
+  padding: 1rem;
+  height: 75vh;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+#content-center h2 {
+  color: white;
+  font-size: 35px;
+  font-family: "Roboto", sans-serif;
+  padding: 1rem 0;
+}
+
+#content-center h3 {
+  color: white;
+  text-align: justify;
+  font-size: 20px;
+}
+
+#content-center div {
+  text-align: center;
+  border: 1px solid red;
+}
+
+.signin-btn,
+.learnmore-btn {
+  color: hsl(180, 100%, 80%);
+  background: hsl(0, 0%, 45%);
+  text-decoration: none;
+  font-size: 17px;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 5px 11px;
+  display: inline-block;
+  margin: 2rem 1rem;
+}
+
+.signin-btn:hover {
+  font-size: 20px;
+}
+
+.learnmore-btn {
+  transition: 1s ease;
+}
+
+.learnmore-btn:hover {
+  font-size: 20px;
+}
+
+#services {
+  height: fit-content;
+  top: 5vh;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+#services h2 {
+  color: darkblue;
+  font-size: 30px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  margin: 1rem 0 2rem 0;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  row-gap: 5vh;
+}
+
+.onlineclass {
+  border: 3px solid blue;
+  border-radius: 20px;
+  box-shadow: 0 9px 10px rgba(0, 0, 0, 0.5);
+  height: 27vh;
+  width: 22vw;
+  position: relative;
+}
+
+.onlineclass p {
+  font-size: 30px;
+  font-weight: bold;
+  color: darkblue;
+}
+
+.onlineclass img {
+  position: absolute;
+  top: 1vh;
+  left: 2vw;
+}
+
+.gamedev {
+  border: 3px solid blue;
+  border-radius: 20px;
+  box-shadow: 0 9px 10px rgba(0, 0, 0, 0.5);
+  height: 27vh;
+  width: 22vw;
+  position: relative;
+}
+
+.gamedev p {
+  font-size: 30px;
+  color: darkblue;
+  font-weight: bold;
+}
+
+.gamedev img {
+  position: absolute;
+  top: 1vh;
+  left: 2vw;
+}
+
+.debugging {
+  border: 3px solid blue;
+  border-radius: 20px;
+  box-shadow: 0 9px 10px rgba(0, 0, 0, 0.5);
+  height: 27vh;
+  width: 22vw;
+  position: relative;
+}
+
+.debugging p {
+  font-size: 30px;
+  font-weight: bold;
+  color: darkblue;
+}
+
+.debugging img {
+  position: absolute;
+  top: 1vh;
+  left: 2vw;
+}
+
+.cybersecurity {
+  border: 3px solid blue;
+  border-radius: 20px;
+  box-shadow: 0 9px 10px rgba(0, 0, 0, 0.5);
+  height: 27vh;
+  width: 22vw;
+  position: relative;
+}
+
+.cybersecurity p {
+  font-size: 30px;
+  font-weight: bold;
+  color: darkblue;
+}
+
+.cybersecurity img {
+  position: absolute;
+  top: 1vh;
+  left: 2vw;
+}
+
+.uiux {
+  border: 3px solid blue;
+  border-radius: 20px;
+  box-shadow: 0 9px 10px rgba(0, 0, 0, 0.5);
+  height: 27vh;
+  width: 22vw;
+  position: relative;
+}
+
+.uiux p {
+  font-size: 30px;
+  font-weight: bold;
+  color: darkblue;
+}
+
+.uiux img {
+  position: absolute;
+  top: 1vh;
+  left: 2vw;
+}
+
+.webdev {
+  border: 3px solid blue;
+  border-radius: 20px;
+  box-shadow: 0 9px 10px rgba(0, 0, 0, 0.5);
+  height: 27vh;
+  width: 22vw;
+  position: relative;
+}
+
+.webdev p {
+  font-size: 30px;
+  font-weight: bold;
+  color: darkblue;
+}
+
+.webdev img {
+  position: absolute;
+  top: 1vh;
+  left: 2vh;
+}
+
+#about {
+  height: fit-content;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#about h2 {
+  color: darkblue;
+  text-align: center;
+}
+
+#about div {
+  display: flex;
+}
+
+#about p {
+  padding: 1.5rem;
+  height: fit-content;
+  width: 60vw;
+  color: blue;
+  font-size: 22px;
+}
+
+#about h3 {
+  font-size: 35px;
+  font-weight: bold;
+  color: darkblue;
+  font-family: "Roboto", sans-serif;
+}
+
+#details {
+  border: 1px;
+  height: 430vh;
+  width: 100%;
+  position: relative;
+  top: 5vh;
+}
+
+#details h2 {
+  color: darkblue;
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  top: 0;
+  left: 40vw;
+}
+
+.details-onlineclasses {
+  border: 1px;
+  height: 55vh;
+  width: 100%;
+  position: relative;
+  top: 15vh;
+}
+
+.details-onlineclasses h3 {
+  font-size: 27px;
+  color: darkblue;
+  position: absolute;
+  top: 3vh;
+  left: 2vw;
+}
+
+.icon1 {
+  position: absolute;
+  top: 2vh;
+  left: 15vw;
+}
+
+.details-onlineclasses p {
+  border: 1px;
+  height: fit-content;
+  width: 55vw;
+  color: blue;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: justify;
+  position: absolute;
+  top: 15vh;
+  left: 1.9vw;
+}
+
+.img1 {
+  position: absolute;
+  top: 4vh;
+  right: 2vw;
+}
+
+.link1 {
+  color: hsl(180, 100%, 80%);
+  background: hsl(0, 0%, 45%);
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 5px 11px;
+  text-decoration: none;
+  font-size: 17px;
+  position: absolute;
+  top: 38vh;
+  left: 2vw;
+  transition: 1s ease;
+}
+
+.link1:hover {
+  font-size: 20px;
+}
+
+.details-gamedev {
+  border: 1px;
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  top: 17vh;
+}
+
+.details-gamedev h3 {
+  font-size: 27px;
+  color: darkblue;
+  position: absolute;
+  top: 15vh;
+  right: 2vw;
+}
+
+.icon2 {
+  position: absolute;
+  top: 11vh;
+  right: 11vw;
+}
+
+.details-gamedev p {
+  border: 1px;
+  height: fit-content;
+  width: 55vw;
+  font-size: 25px;
+  color: blue;
+  text-align: justify;
+  line-height: 30px;
+  position: absolute;
+  top: 30vh;
+  right: 2vw;
+}
+
+.img2 {
+  position: absolute;
+  top: 18vh;
+  left: 2vw;
+}
+
+.link2 {
+  color: hsl(180, 100%, 80%);
+  background: hsl(0, 0%, 45%);
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 5px 11px;
+  text-decoration: none;
+  font-size: 17px;
+  position: absolute;
+  top: 49vh;
+  right: 2vw;
+  transition: 1s ease;
+}
+
+.link2:hover {
+  font-size: 20px;
+}
+
+.details-debugging {
+  border: 1px;
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  top: 20vh;
+}
+
+.details-debugging h3 {
+  font-size: 27px;
+  color: darkblue;
+  position: absolute;
+  top: 9vh;
+  left: 2vw;
+}
+
+.icon3 {
+  position: absolute;
+  top: 6vh;
+  left: 12vw;
+}
+
+.details-debugging p {
+  border: 1px;
+  height: fit-content;
+  width: 55vw;
+  color: blue;
+  font-size: 25px;
+  text-align: justify;
+  line-height: 30px;
+  position: absolute;
+  top: 20vh;
+  left: 2vw;
+}
+
+.img3 {
+  position: absolute;
+  top: 8vh;
+  right: 2vw;
+}
+
+.link3 {
+  border: 1px solid white;
+  border-radius: 20px;
+  background: hsl(0, 0%, 45%);
+  color: hsl(180, 100%, 80%);
+  font-size: 17px;
+  text-decoration: none;
+  padding: 5px 11px;
+  position: absolute;
+  top: 42vh;
+  left: 2vw;
+  transition: 1s ease;
+}
+
+.link3:hover {
+  font-size: 20px;
+}
+
+.details-cybersecurity {
+  border: 1px;
+  height: 90vh;
+  width: 100%;
+  position: relative;
+  top: 20vh;
+}
+
+.details-cybersecurity h3 {
+  font-size: 27px;
+  color: darkblue;
+  position: absolute;
+  top: 14vh;
+  right: 13vw;
+}
+
+.icon4 {
+  position: absolute;
+  top: 10vh;
+  right: 7vw;
+}
+
+.details-cybersecurity p {
+  border: 1px;
+  height: fit-content;
+  width: 55vw;
+  font-size: 25px;
+  text-align: justify;
+  line-height: 30px;
+  color: blue;
+  position: absolute;
+  top: 25vh;
+  right: 2vw;
+}
+
+.img4 {
+  position: absolute;
+  top: 15vh;
+  left: 2vw;
+}
+
+.link4 {
+  color: hsl(180, 100%, 80%);
+  background: hsl(0, 0%, 45%);
+  border: 1px solid white;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 17px;
+  padding: 5px 11px;
+  position: absolute;
+  top: 47vh;
+  right: 2vw;
+  transition: 1s ease;
+}
+
+.link4:hover {
+  font-size: 20px;
+}
+
+.details-uiux {
+  border: 1px;
+  height: 60vh;
+  width: 100%;
+  position: relative;
+  top: 10vh;
+}
+
+.details-uiux h3 {
+  font-size: 27px;
+  color: darkblue;
+  position: absolute;
+  top: 15vh;
+  left: 5vw;
+}
+
+.icon5 {
+  position: absolute;
+  top: 12vh;
+  left: 18vw;
+}
+
+.details-uiux p {
+  border: 1px;
+  height: fit-content;
+  width: 55vw;
+  font-size: 25px;
+  color: blue;
+  text-align: justify;
+  line-height: 30px;
+  position: absolute;
+  top: 25vh;
+  left: 2vw;
+}
+
+.img5 {
+  position: absolute;
+  top: 10vh;
+  right: 2vw;
+}
+
+.link5 {
+  color: hsl(180, 100%, 80%);
+  background: hsl(0, 0%, 45%);
+  border: 1px solid white;
+  border-radius: 20px;
+  font-size: 17px;
+  text-decoration: none;
+  padding: 5px 11px;
+  transition: 1s ease;
+  position: absolute;
+  top: 48vh;
+  left: 2vw;
+}
+
+.link5:hover {
+  font-size: 20px;
+}
+
+.details-webdev {
+  border: 1px;
+  height: 70vh;
+  width: 100%;
+  position: relative;
+  top: 19vh;
+}
+
+.details-webdev h3 {
+  font-size: 27px;
+  color: blue;
+  position: absolute;
+  top: 11vh;
+  right: 13vw;
+}
+
+.icon6 {
+  position: absolute;
+  top: 8vh;
+  right: 7vw;
+}
+
+.details-webdev p {
+  border: 1px;
+  width: 55vw;
+  height: fit-content;
+  font-size: 25px;
+  color: blue;
+  line-height: 30px;
+  text-align: justify;
+  position: absolute;
+  top: 20vh;
+  right: 2vw;
+}
+
+.img6 {
+  position: absolute;
+  top: 12vh;
+  left: 2vw;
+}
+
+.link6 {
+  color: hsl(180, 100%, 80%);
+  background: hsl(0, 0%, 45%);
+  border: 1px solid white;
+  border-radius: 20px;
+  font-size: 17px;
+  text-decoration: none;
+  padding: 5px 11px;
+  position: absolute;
+  top: 36vh;
+  right: 2vw;
+  transition: 1s ease;
+}
+
+.link6:hover {
+  font-size: 20px;
+}
+
+#contact {
+  border: 1px;
+  height: 90vh;
+  width: 100%;
+}
+
+.I1 {
+  border: 1px;
+  height: 70vh;
+  width: 40vw;
+  position: relative;
+  top: 10vh;
+  left: 2vw;
+}
+
+.I1 h2 {
+  color: darkblue;
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  position: absolute;
+  left: 10vw;
+  top: 1vh;
+}
+
+.myinfo {
+  border: 3px solid darkblue;
+  border-radius: 20px;
+  height: 50vh;
+  width: 30vw;
+  position: absolute;
+  top: 10vh;
+  left: 3vw;
+  box-shadow: 0px 9px 10px rgba(0, 0, 0, 0.5);
+}
+
+.myinfo h3 {
+  color: darkblue;
+  font-size: 25px;
+  padding: 7px 16px;
+}
+
+.myinfo p {
+  color: blue;
+  font-size: 20px;
+  padding: 5px 16px;
+}
+
+.message {
+  border: 1px;
+  height: 70vh;
+  width: 46vw;
+  position: absolute;
+  top: -1vh;
+  left: 50vw;
+}
+#text {
+  padding-left: 5px;
+  font-family: "Courier New", Courier, monospace;
+}
+.message h2 {
+  color: darkblue;
+  font-size: 30px;
+  position: absolute;
+  top: -2vh;
+}
+
+.form {
+  border: 3px solid darkblue;
+  border-radius: 20px;
+  height: 59vh;
+  width: 40vw;
+  position: absolute;
+  top: 8vh;
+  right: 3vw;
+  box-shadow: 0 9px 10px rgba(0, 0, 0, 0.5);
+}
+
+#na1 {
+  font-size: 20px;
+  color: blue;
+  position: absolute;
+  left: 1vw;
+  top: 2vh;
+}
+
+#em1 {
+  font-size: 20px;
+  color: blue;
+  position: absolute;
+  left: 1vw;
+  top: 10vh;
+}
+
+#text {
+  position: absolute;
+  top: 20vh;
+  left: 2vw;
+  width: 34vw;
+  height: 25vh;
+}
+
+#send-btn {
+  color: hsl(180, 100%, 80%);
+  background: hsl(0, 0%, 45%);
+  border: 1px solid white;
+  text-align: center;
+  width: 37.8vw;
+  height: 4vh;
+  position: absolute;
+  top: 50vh;
+  left: 1vw;
+}
+
+#footer {
+  border: 1px solid white;
+  background: blue;
+  color: white;
+  height: 5vh;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  #header h2 {
+    font-size: 1.3rem;
+    top: 6.5vh;
+  }
+
+  #header .hambuger-menu {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-}
-
-#header h2{
-    color: cyan;
-    font-size: 30px;
-    font-family: 'Roboto', sans-serif;
-    position: absolute;
-    left: 3.5vw;
-    top: 5vh;
-}
-
-#header ul{
-    list-style: none;
-    display: flex;
-    position: absolute;
-    right: 3vw;
-    top: 6.4vh;
-}
-
-#header ul li a{
-    text-decoration: none;
-    padding: 0 20px;
-    display: inline-block;
-    color: darkblue;
-}
-
-#header ul li a::after{
-    content: '';
-    display: block;
-    height: 5px;
-    width: 0;
-    background: cyan;
-    transition: all 0.5s;
-}
-
-#header ul li a:hover::after{
-    width: 100%;
-}
-
-#header .hambuger-menu{
-    display: none;
-    position: relative;
+    justify-content: center;
     width: 20vw;
     height: 10vh;
-    top: 1vh;
-    left: 35vw; 
-}
+  }
 
-#content-center{
-    border: 1px;
+  #header .hambuger-menu-btn {
+    width: 12vw;
+    height: 1vh;
+    border-radius: 2vh;
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+  }
+
+  #header .hambuger-menu-btn::before,
+  .hambuger-menu-btn::after {
+    content: "";
+    position: absolute;
+    width: 12vw;
+    height: 1vh;
+    border-radius: 2vh;
+    background-color: white;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .hambuger-menu-btn::before {
+    transform: translateY(-2vh);
+  }
+
+  .hambuger-menu-btn::after {
+    transform: translateY(2vh);
+  }
+
+  #header ul {
+    display: none;
+  }
+
+  #content-center img {
     width: 100%;
-    height: 75vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    top: 2vh;
-}
-
-#content-center img{
-    width: 100%;
-    height: 75vh;
-    z-index: -1;
-}
-
-
-#content-center h2{
-    border: 1px;
-    height: fit-content;
-    width: 30vw;
-    text-align: center;
-    color: white;
-    font-size: 35px;
-    font-family: 'Roboto', sans-serif;
-    position: absolute;
-    top: 28vh;
-    right: 7vw;
-}
-
-#content-center h3{
-    border: 1px;
-    color: white;
-    width: 42vw;
-    height: fit-content;
-    text-align: justify;
-    font-size: 25px;
-    position: absolute;
-    top: 38vh;
-    right: 1vw;
-    line-height: 30px;
-}
-
-.signin-btn{
-    position: absolute;
-    top: 55vh;
-    right: 29vw;
-    color: hsl(180, 100%, 80%);
-    background: hsl(0, 0%, 45%);
-    text-decoration: none;
-    font-size: 17px;
-    border: 1px solid white;
-    border-radius: 20px;
-    padding: 5px 11px;
-    transition: 1s ease;
-}
-
-.signin-btn:hover{
-    font-size: 20px;
-}
-
-.learnmore-btn{
-    position: absolute;
-    top: 55vh;
-    right: 19vw;
-    color: hsl(180, 100%, 80%);
-    background: hsl(0, 0%, 45%);
-    text-decoration: none;
-    font-size: 17px;
-    border: 1px solid white;
-    border-radius: 20px;
-    padding: 5px 11px;
-    transition: 1s ease;
-}
-
-.learnmore-btn:hover{
-    font-size: 20px;
-}
-
-#services{
-    border: 1px;
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    top: 5vh;
-}
-
-#services h2{
-    border: 1px;
-    height: fit-content;
-    width: 14vw;
-    color: darkblue;
-    font-size: 30px;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    position: absolute;
-    left: 40vw;
-    top: 1vh;
-}
-
-.onlineclass{
-    border: 3px solid blue;
-    border-radius: 20px;
-    box-shadow: 0 9px 10px rgba(0,0,0,0.5);
-    height: 27vh;
-    width: 22vw;
-    position: relative;
-    top: 12vh;
-    left: 2vw;
-}
-
-.onlineclass p{
-    font-size: 30px;
-    font-weight: bold;
-    color: darkblue;
-    position: absolute;
-    top: 19vh;
-    left: 4vw;    
-}
-
-.onlineclass img{
-    position: absolute;
-    top: 1vh;
-    left: 2vw;
-}
-
-.gamedev{
-    border: 3px solid blue;
-    border-radius: 20px;
-    box-shadow: 0 9px 10px rgba(0,0,0,0.5);
-    height: 27vh;
-    width: 22vw;
-    position: relative;
-    top: -15vh;
-    left: 38vw;
-}
-
-.gamedev p{
-    font-size: 30px;
-    color: darkblue;
-    font-weight: bold;
-    position: absolute;
-    top: 19vh;
-    left: 6vw;
-}
-
-.gamedev img{
-    position: absolute;
-    top: 1vh;
-    left: 2vw;
-}
-
-.debugging{
-    border: 3px solid blue;
-    border-radius: 20px;
-    box-shadow: 0 9px 10px rgba(0,0,0,0.5);
-    height: 27vh;
-    width: 22vw;
-    position: relative;
-    top: -42vh;
-    left: 74vw;
-}
-
-.debugging p{
-    font-size: 30px;
-    font-weight: bold;
-    color: darkblue;
-    position: absolute;
-    top: 19vh;
-    left: 6vw;
-}
-
-.debugging img{
-    position: absolute;
-    top: 1vh;
-    left: 2vw;
-}
-
-.cybersecurity{
-    border: 3px solid blue;
-    border-radius: 20px;
-    box-shadow: 0 9px 10px rgba(0,0,0,0.5);
-    height: 27vh;
-    width: 22vw;
+    height: 40vh;
     position: relative;
     top: -18vh;
-    left:2vw;
-}
+  }
 
-.cybersecurity p{
-    font-size: 30px;
-    font-weight: bold;
-    color: darkblue;
-    position: absolute;
-    top: 19vh;
-    left: 3.5vw;
-}
-
-.cybersecurity img{
-    position: absolute;
-    top: 1vh;
-    left: 2vw;
-}
-
-.uiux{
-    border: 3px solid blue;
-    border-radius: 20px;
-    box-shadow: 0 9px 10px rgba(0,0,0,0.5);
-    height: 27vh;
-    width: 22vw;
-    position: relative;
-    top: -45vh;
-    left: 38vw;
-}
-
-.uiux p{
-    font-size: 30px;
-    font-weight: bold;
-    color: darkblue;
-    position: absolute;
-    top: 19vh;
-    left: 4vw;
-}
-
-.uiux img{
-    position: absolute;
-    top: 1vh;
-    left: 2vw;
-}
-
-.webdev{
-    border: 3px solid blue;
-    border-radius: 20px;
-    box-shadow: 0 9px 10px rgba(0,0,0,0.5);
-    height: 27vh;
-    width: 22vw;
-    position: relative;
-    top: -72vh;
-    left: 74vw;
-}
-
-.webdev p{
-    font-size: 30px;
-    font-weight: bold;
-    color: darkblue;
-    position: absolute;
-    top: 19vh;
-    left: 7vw;
-}
-
-.webdev img{
-    position: absolute;
-    top: 1vh;
-    left: 2vh;
-}
-
-#about{
-    border: 1px;
-    height: 80vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 8vh;
-}
-
-#about h2{
-    border: 1px;
-    font-size: 40px;
-    color: darkblue;
-    height: fit-content;
-    width: 18vw;
-    position: absolute;
-    top: 0vh;
-    left: 40vw;
-}
-
-#about p{
-    border: 1px;
-    height: fit-content;
-    width: 60vw;
-    color: blue;
-    font-size: 22px;
-    position: absolute;
-    top: 18vh;
-    left: 1vw;
-    line-height: 27px;
-}
-
-#about img{
-    position: absolute;
-    right: 0vw;
-    top: 13vh;
-}
-
-#about h3{
-    position: absolute;
-    right: 11.5vw;
-    top: 30vh;
-    font-size: 35px;
-    font-weight: bold;
-    color: darkblue;
-    font-family: 'Roboto', sans-serif;
-}
-
-#details{
-    border: 1px;
-    height: 430vh;
-    width: 100%;
-    position: relative;
-    top: 5vh;
-}
-
-#details h2{
-    color: darkblue;
-    font-size: 30px;
-    font-family: 'Roboto', sans-serif;
-    position: absolute;
-    top: 0;
-    left: 40vw;
-}
-
-.details-onlineclasses{
-    border: 1px;
-    height: 55vh;
-    width: 100%;
-    position: relative;
-    top: 15vh;
-}
-
-.details-onlineclasses h3{
-    font-size: 27px;
-    color: darkblue;
-    position: absolute;
+  #content-center h2 {
+    width: 50vw;
+    font-size: 1.5rem;
     top: 3vh;
-    left: 2vw;
-}
+    right: 0vw;
+  }
 
-.icon1{
-    position: absolute;
-    top: 2vh;
-    left: 15vw;
-}
-
-.details-onlineclasses p{
-    border: 1px;
-    height: fit-content;
-    width: 55vw;
-    color: blue;
-    font-size: 25px;
-    line-height: 30px;
-    text-align: justify;
-    position: absolute;
+  #content-center h3 {
+    width: 50vw;
     top: 15vh;
-    left: 1.9vw;
-}
+    line-height: 2.8vh;
+    letter-spacing: 0;
+    font-size: 0.8rem;
+  }
 
-.img1{
-    position: absolute;
-    top: 4vh;
-    right: 2vw;
-}
+  #content-center .signin-btn {
+    font-size: 0.8rem;
+    top: 33vh;
+    right: 33vw;
+  }
 
-.link1{
-    color:hsl(180, 100%, 80%);
-    background: hsl(0, 0%, 45%);
-    border: 1px solid white;
-    border-radius: 20px;
-    padding: 5px 11px;
-    text-decoration: none;
-    font-size: 17px;
-    position: absolute;
-    top: 38vh;
-    left: 2vw;
-    transition: 1s ease;
-}
-
-.link1:hover{
-    font-size: 20px;
-}
-
-.details-gamedev{
-    border: 1px;
-    width: 100%;
-    height: 70vh;
-    position: relative;
-    top: 17vh;
-}
-
-.details-gamedev h3{
-    font-size: 27px;
-    color: darkblue;
-    position: absolute;
-    top: 15vh;
-    right: 2vw;
-}
-
-.icon2{
-    position: absolute;
-    top: 11vh;
-    right: 11vw;
-}
-
-.details-gamedev p{
-    border: 1px;
-    height: fit-content;
-    width: 55vw;
-    font-size: 25px;
-    color: blue;
-    text-align: justify;
-    line-height: 30px;
-    position: absolute;
-    top: 30vh;
-    right: 2vw;
-}
-
-.img2{
-    position: absolute;
-    top: 18vh;
-    left: 2vw;
-}
-
-.link2{
-    color:hsl(180, 100%, 80%);
-    background:hsl(0, 0%, 45%);
-    border: 1px solid white;
-    border-radius: 20px;
-    padding: 5px 11px;
-    text-decoration: none;
-    font-size: 17px;
-    position: absolute;
-    top: 49vh;
-    right: 2vw;
-    transition: 1s ease;
-}
-
-.link2:hover{
-    font-size: 20px;
-}
-
-.details-debugging{
-    border: 1px;
-    width: 100%;
-    height: 70vh;
-    position: relative;
-    top: 20vh;
-}
-
-.details-debugging h3{
-    font-size: 27px;
-    color: darkblue;
-    position: absolute;
-    top: 9vh;
-    left: 2vw;
-}
-
-.icon3{
-    position: absolute;
-    top: 6vh;
-    left: 12vw;
-}
-
-.details-debugging p{
-    border: 1px;
-    height: fit-content;
-    width: 55vw;
-    color: blue;
-    font-size: 25px;
-    text-align: justify;
-    line-height: 30px;
-    position: absolute;
-    top: 20vh;
-    left: 2vw;
-}
-
-.img3{
-    position: absolute;
-    top: 8vh;
-    right: 2vw;
-}
-
-.link3{
-    border: 1px solid white;
-    border-radius: 20px;
-    background:hsl(0, 0%, 45%);
-    color:hsl(180, 100%, 80%);
-    font-size: 17px;
-    text-decoration: none;
-    padding: 5px 11px;
-    position: absolute;
-    top: 42vh;
-    left: 2vw;
-    transition: 1s ease;
-}
-
-.link3:hover{
-    font-size: 20px;
-}
-
-.details-cybersecurity{
-    border: 1px;
-    height: 90vh;
-    width: 100%;
-    position: relative;
-    top: 20vh;
-}
-
-.details-cybersecurity h3{
-    font-size: 27px;
-    color: darkblue;
-    position: absolute;
-    top: 14vh;
-    right: 13vw;
-}
-
-.icon4{
-    position: absolute;
-    top: 10vh;
-    right: 7vw;
-}
-
-.details-cybersecurity p{
-    border: 1px;
-    height: fit-content;
-    width: 55vw;
-    font-size: 25px;
-    text-align: justify;
-    line-height: 30px;
-    color: blue;
-    position: absolute;
-    top: 25vh;
-    right: 2vw;
-}
-
-.img4{
-    position: absolute;
-    top: 15vh;
-    left: 2vw;
-}
-
-.link4{
-    color:hsl(180, 100%, 80%);
-    background:hsl(0, 0%, 45%);
-    border: 1px solid white;
-    border-radius: 20px;
-    text-decoration: none;
-    font-size: 17px;
-    padding: 5px 11px;
-    position: absolute;
-    top: 47vh;
-    right: 2vw;
-    transition: 1s ease;
-}
-
-.link4:hover{
-    font-size: 20px;
-}
-
-.details-uiux{
-    border: 1px;
-    height: 60vh;
-    width: 100%;
-    position: relative;
-    top: 10vh;
-}
-
-.details-uiux h3{
-    font-size: 27px;
-    color: darkblue;
-    position: absolute;
-    top: 15vh;
-    left: 5vw;
-}
-
-.icon5{
-    position: absolute;
-    top: 12vh;
-    left: 18vw
-}
-
-.details-uiux p{
-    border: 1px;
-    height: fit-content;
-    width: 55vw;
-    font-size: 25px;
-    color: blue;
-    text-align: justify;
-    line-height: 30px;
-    position: absolute;
-    top: 25vh;
-    left: 2vw;
-}
-
-.img5{
-    position: absolute;
-    top: 10vh;
-    right: 2vw;
-}
-
-.link5{
-    color:hsl(180, 100%, 80%);
-    background:hsl(0, 0%, 45%);
-    border: 1px solid white;
-    border-radius: 20px;
-    font-size: 17px;
-    text-decoration: none;
-    padding: 5px 11px;
-    transition: 1s ease;
-    position: absolute;
-    top: 48vh;
-    left: 2vw;
-}
-
-.link5:hover{
-    font-size: 20px;
-}
-
-.details-webdev{
-    border: 1px;
-    height: 70vh;
-    width: 100%;
-    position: relative;
-    top: 19vh;
-}
-
-.details-webdev h3{
-    font-size: 27px;
-    color: blue;
-    position: absolute;
-    top: 11vh;
-    right: 13vw;
-}
-
-.icon6{
-    position: absolute;
-    top: 8vh;
-    right: 7vw;
-}
-
-.details-webdev p{
-    border: 1px;
-    width: 55vw;
-    height: fit-content;
-    font-size: 25px;
-    color: blue;
-    line-height: 30px;
-    text-align: justify;
-    position: absolute;
-    top: 20vh;
-    right: 2vw;
-}
-
-.img6{
-    position: absolute;
-    top: 12vh;
-    left: 2vw;
-}
-
-.link6{
-    color:hsl(180, 100%, 80%);
-    background:hsl(0, 0%, 45%);
-    border: 1px solid white;
-    border-radius: 20px;
-    font-size: 17px;
-    text-decoration: none;
-    padding: 5px 11px;
-    position: absolute;
-    top: 36vh;
-    right: 2vw;
-    transition: 1s ease;
-}
-
-.link6:hover{
-    font-size: 20px;
-}
-
-#contact{
-    border: 1px;
-    height: 90vh;
-    width: 100%;
-}
-
-.I1{
-    border: 1px;
-    height: 70vh;
-    width: 40vw;
-    position: relative;
-    top: 10vh;
-    left: 2vw;
-}
-
-.I1 h2{
-    color: darkblue;
-    font-size: 30px;
-    font-family: 'Roboto', sans-serif;
-    position: absolute;
-    left: 10vw;
-    top: 1vh;
-}
-
-.myinfo{
-    border: 3px solid darkblue;
-    border-radius: 20px;
-    height: 50vh;
-    width: 30vw;
-    position: absolute;
-    top: 10vh;
-    left: 3vw;
-    box-shadow: 0px 9px 10px rgba(0, 0, 0, 0.5);
-}
-
-.myinfo h3{
-    color: darkblue;
-    font-size: 25px;
-    padding: 7px 16px;
-}
-
-.myinfo p{
-    color: blue;
-    font-size: 20px;
-    padding: 5px 16px;
-}
-
-.message{
-    border: 1px;
-    height: 70vh;
-    width: 46vw;
-    position: absolute;
-    top: -1vh;
-    left: 50vw;
-}
-#text{
-    padding-left: 5px;
-    font-family: 'Courier New', Courier, monospace;
-}
-.message h2{
-    color: darkblue;
-    font-size: 30px;
-    position: absolute;
-    top: -2vh;
-}
-
-.form{
-    border: 3px solid darkblue;
-    border-radius: 20px;
-    height: 59vh;
-    width: 40vw;
-    position: absolute;
-    top: 8vh;
+  #content-center .learnmore-btn {
+    font-size: 0.8rem;
+    top: 33vh;
     right: 3vw;
-    box-shadow: 0 9px 10px rgba(0, 0, 0, 0.5);
-}
-
-#na1{
-    font-size: 20px;
-    color: blue;
-    position: absolute;
-    left: 1vw;
-    top: 2vh;
-}
-
-#em1{
-    font-size: 20px;
-    color: blue;
-    position: absolute;
-    left: 1vw;
-    top: 10vh;
-}
-
-#text{
-    position: absolute;
-    top: 20vh;
-    left: 2vw;
-    width: 34vw;
-    height: 25vh;
-}
-
-#send-btn{
-    color:hsl(180, 100%, 80%);
-    background:hsl(0, 0%, 45%);
-    border: 1px solid white;
-    text-align: center;
-    width: 37.8vw;
-    height: 4vh;
-    position: absolute;
-    top: 50vh;
-    left: 1vw;
-}
- 
-#footer{
-    border: 1px solid white;
-    background: blue;
-    color: white;
-    height: 5vh;
-    width: 100%;
-    text-align: center;
-    font-size: 25px;
-}
-
-@media (min-width: 320px) and (max-width: 480px){
-    #header h2{
-        font-size: 1.3rem;
-        top: 6.5vh;
-    }
-
-    #header .hambuger-menu{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 20vw;
-        height: 10vh;
-    }
-
-    #header .hambuger-menu-btn{
-        width: 12vw;
-        height: 1vh;
-        border-radius: 2vh;
-        background-color: white;
-        transition: all .5s ease-in-out;
-    }
-
-    #header .hambuger-menu-btn::before,
-    .hambuger-menu-btn::after{
-        content: '';
-        position: absolute;
-        width: 12vw;
-        height: 1vh;
-        border-radius: 2vh;
-        background-color: white;
-        transition: all .5s ease-in-out;
-    }
-
-    .hambuger-menu-btn::before{
-        transform: translateY(-2vh);
-    }
-
-    .hambuger-menu-btn::after{
-        transform: translatey(2vh);
-    }
-
-    #header ul{
-        display: none;
-    }
-
-    #content-center img{
-        width: 100%;
-        height: 40vh;
-        position: relative;
-        top: -18vh
-    }
-
-    #content-center h2{
-        width: 50vw;
-        font-size: 1.5rem;
-        top: 3vh;
-        right: 0vw;
-    }
-
-    #content-center h3{
-        width: 50vw;
-        top: 15vh;
-        line-height: 2.8vh;
-        letter-spacing: 0;
-        font-size: 0.8rem;
-    }
-
-    #content-center .signin-btn{
-        font-size: .8rem;
-        top: 33vh;
-        right: 33vw;
-    }
-
-    #content-center .learnmore-btn{
-        font-size: .8rem;
-        top: 33vh;
-        right: 3vw;
-    }
+  }
 }
